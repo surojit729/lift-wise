@@ -107,40 +107,11 @@ jQuery(document).ready(function () {
                 spaceBetween: 20,
             },
             992: {
+                slidesPerView: 3,
+            },
+            1200: {
                 slidesPerView: 4,
             },
-        },
-    });
-    // Testimonial Slider
-    new Swiper('.testimonial-slider-outer .swiper', {
-        slidesPerView: 1,
-        loop: false,
-        spaceBetween: 0,
-        speed: 1000,
-        autoplay: {
-            delay: 4000,
-            disableOnInteraction: false,
-            pauseOnMouseEnter: true,
-        },
-        pagination: {
-            el: ".testimonial-slider-outer .swiper-pagination",
-            clickable: true,
-        },
-    });
-    // Testimonial Slider
-    new Swiper('.serviceGallerySliderOuter .swiper', {
-        slidesPerView: 1,
-        loop: false,
-        spaceBetween: 20,
-        speed: 1000,
-        autoplay: {
-            delay: 4000,
-            disableOnInteraction: false,
-            pauseOnMouseEnter: true,
-        },
-        pagination: {
-            el: ".serviceGallerySliderOuter .swiper-pagination",
-            clickable: true,
         },
     });
 
