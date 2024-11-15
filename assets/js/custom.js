@@ -156,8 +156,8 @@ jQuery(document).ready(function () {
         });
     }
     // Sidebar Location Toogle
-    $(".toggleBtn p").click(function () {
-        $(this).text(function (i, v) {
+    jQuery(".toggleBtn p").click(function () {
+        jQuery(this).text(function (i, v) {
             return v === 'view More +' ? 'View less' : 'view More +'
         });
     });
