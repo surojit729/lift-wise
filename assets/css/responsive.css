@@ -127,6 +127,8 @@
 	.hdr_menu li.menu-item-has-children .sub-menu a {
 		color: #000;
 		font-size: 14px;
+		display: inline-block;
+		width: 100%;
 	}
 
 	.hdr_menu li.menu-item-has-children .sub-menu a:hover {
@@ -147,7 +149,7 @@
 	}
 
 	.sticky .hdr_menu li.current-menu-item a {
-		color: #688238;
+		color: var(--primary-color);
 	}
 
 	.sticky .hdr_menu li:hover a {
