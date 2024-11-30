@@ -129,6 +129,8 @@
 		font-size: 14px;
 		display: inline-block;
 		width: 100%;
+		border: 0;
+		padding: 0;
 	}
 
 	.hdr_menu li.menu-item-has-children .sub-menu a:hover {
@@ -291,6 +293,7 @@
 
 	.hdr_menu li.menu-item-has-children .sub-menu li.current-menu-item a {
 		padding-left: 0;
+		background-color: transparent;
 	}
 
 
@@ -668,5 +671,13 @@
 	.locationDetailsContentOuter ol li {
 		padding: 15px 15px 15px 45px;
 		margin-bottom: 20px;
+	}
+
+	.aboutUsContentWrapper .section-heading h3 {
+		font-size: 23px;
+	}
+
+	.aboutUsContentWrapper .row:nth-child(even) {
+		margin-top: 20px;
 	}
 }

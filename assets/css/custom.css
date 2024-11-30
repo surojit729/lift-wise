@@ -686,7 +686,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	transition: all 0.4s ease-in-out;
 	z-index: 9;
 	left: 50%;
-	transform: translate(-40%, -50%);
+	transform: translate(-54%, -50%);
 }
 
 
@@ -871,7 +871,10 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .hdr_menu li.menu-item-has-children .sub-menu li.current-menu-item a {
 	padding-left: 15px;
-	color: var(--primary-color);
+	background-color: var(--primary-color);
+	border-color: var(--primary-color);
+	color: #fff;
+	padding-left: 15px;
 }
 
 .hdr_menu li.menu-item-has-children .sub-menu li.current-menu-item a::after {
@@ -879,16 +882,21 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .hdr_menu li.menu-item-has-children .sub-menu a {
-	font-size: 14px;
+	font-size: 13px;
 	color: #000103;
 	padding: 0;
 	background-color: transparent;
+	padding: 6px 12px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	display: block;
 }
 
 .hdr_menu li.menu-item-has-children .sub-menu a::after {
+	display: none;
 	content: "";
 	position: absolute;
-	top: 8px;
+	top: 15px;
 	left: 0;
 	width: 0;
 	height: 2px;
@@ -897,7 +905,9 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .hdr_menu li.menu-item-has-children .sub-menu a:hover {
-	color: var(--primary-color);
+	background-color: var(--primary-color);
+	border-color: var(--primary-color);
+	color: #fff;
 	padding-left: 15px;
 }
 
@@ -927,7 +937,7 @@ input[type="number"]::-webkit-outer-spin-button {
 .hdr_menu li.menu-item-has-children .current-menu-item a {
 	font-size: 14px;
 	color: #000103;
-	padding: 0;
+	padding: 6px 12px;
 	background-color: transparent;
 }
 
@@ -2429,11 +2439,288 @@ input[type="number"]::-webkit-outer-spin-button {
 	background-color: var(--color-white);
 	padding: 20px 25px;
 	border-radius: 15px;
-	margin-bottom: 35px;
+	margin: 35px 0;
 	box-shadow: 21px 4px 75px 1px #F1E8E0;
 }
 
 .faqContent .section-heading h2 {
 	font-size: 40px;
 	margin-bottom: 10px;
+}
+
+/*********** Prodct *********/
+.page-title {}
+
+.page-title h2 {
+
+	font-style: normal;
+	font-weight: 600;
+	font-size: 53px;
+	line-height: 71px;
+	/* or 134% */
+	text-align: center;
+	text-transform: capitalize;
+	display: inline-block;
+	margin-bottom: 18px;
+	color: #282828;
+
+
+}
+
+.page-title p {
+	display: inline-block;
+	margin-bottom: 18px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 26px;
+	line-height: 29px;
+	/* or 112% */
+	text-align: center;
+
+	color: #262626;
+
+
+}
+
+.prduct-holder {
+	background-color: #fff;
+	width: 100%;
+	display: inline-block;
+	vertical-align: top;
+	padding: 30px;
+	border-radius: 20px;
+	margin: 20px 0px;
+}
+
+.img-holder {
+	margin-bottom: 15px;
+}
+
+.img-holder img {
+	border: 1px solid #DEDEDE;
+	border-radius: 15px;
+}
+
+.description {
+	margin-bottom: 15px;
+}
+
+.description h3 {
+
+	font-style: normal;
+	font-weight: 500;
+	font-size: 35px;
+	line-height: 50px;
+	/* or 128% */
+	text-transform: capitalize;
+	display: inline-block;
+	margin-bottom: 15px;
+	color: #282828;
+
+
+}
+
+.description h4 {
+
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 50px;
+	/* identical to box height, or 208% */
+	text-transform: capitalize;
+	display: inline-block;
+	margin-bottom: 15px;
+	color: #FF7810;
+
+
+}
+
+.description p {
+	display: inline-block;
+	margin-bottom: 15px;
+
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 29px;
+	/* or 161% */
+
+	color: #262626;
+
+
+}
+
+.description ul {}
+
+.description ul li {
+	position: relative;
+	font-family: 'Mulish';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 29px;
+	color: #353535;
+	padding-left: 28px;
+	margin-bottom: 14px;
+}
+
+.description ul li:after {
+	left: 0px;
+	position: absolute;
+	font-family: "Line Awesome Free";
+	font-weight: 900;
+	content: "\f00c";
+	font-size: 11px;
+	color: #fff;
+	background: #ff7810;
+	width: 20px;
+	height: 20px;
+	border-radius: 100px;
+	text-align: center;
+	top: 6px;
+	line-height: 20px;
+}
+
+.row-reversce-2,
+.row-reversce-4,
+.row-reversce-6,
+.row-reversce-8,
+.row-reversce-10,
+.row-reversce-12 {
+	flex-direction: row-reverse;
+}
+
+.cta-wrapper {
+	position: relative;
+	width: 100%;
+	padding: 90px 0px;
+	overflow: hidden;
+	background-attachment: fixed;
+	background-position: center left;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.cta-wrapper:after {
+	content: "";
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+	background: rgba(35, 35, 35, 0.67);
+
+}
+
+.cta-wrapper .container {
+	position: relative;
+	z-index: 1;
+}
+
+.banner-text-cta h3,
+.banner-text-cta h2 {
+
+	font-style: normal;
+	font-weight: 600;
+	font-size: 53px;
+	line-height: 71px;
+	/* or 134% */
+	text-align: center;
+	text-transform: capitalize;
+
+	color: #FFFFFF;
+
+
+}
+
+.banner-text-cta p {
+
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 27px;
+	/* or 150% */
+	text-align: center;
+
+	color: #FFFFFF;
+	margin: 20px 0px;
+
+}
+
+
+/*********** Prodct *********/
+.shortBanner {
+	padding: 210px 0 109px;
+}
+
+.aboutUsContentWrapper {
+	background-color: #FFF7F1;
+}
+
+.aboutUsContentWrapper .row:nth-child(even) {
+	margin-top: 90px;
+	flex-direction: row-reverse;
+}
+
+.aboutUsContentWrapper .media {
+	position: relative;
+}
+
+.aboutUsContentWrapper .media::before {
+	content: "";
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+	background-image: url(../images/lift-wise-logo.svg);
+	background-repeat: no-repeat;
+	background-size: 135px 55px;
+	width: 225px;
+	height: 91px;
+	background-position: bottom right;
+}
+
+.aboutUsContentWrapper .section-heading h3 {
+	font-size: 42px;
+	font-weight: 600;
+	color: #282828;
+	margin-bottom: 20px;
+}
+
+.testimonialsWrapper {
+	background-color: #FFF7F1;
+}
+
+.testimonialsWrapper [class*="col-"] {
+	margin-bottom: 60px;
+}
+
+.testimonialsCard {
+	background-color: var(--color-white);
+	border-radius: 18px;
+	position: relative;
+	padding: 40px;
+	height: 100%;
+}
+
+.testimonialsCard .rating {
+	position: absolute;
+	left: 35px;
+	top: -15px;
+}
+
+.testimonialsCard .reviewData p {
+	color: #353535;
+	margin-bottom: 20px;
+}
+
+.testimonialsCard .autharInfo {
+	display: flex;
+	align-items: center;
+	gap: 0 13px;
+}
+
+.testimonialsCard .autharInfo p {
+	font-weight: 700;
+	color: #353535;
 }

@@ -81,6 +81,13 @@ jQuery(document).ready(function () {
         // increase value up to 10, then refresh AOS
         scrollRef <= 10 ? scrollRef++ : AOS.refresh();
     });*/
+    // scroll to
+    jQuery(".banner-text .listItem:nth-child(1)").click(function () {
+        jQuery([document.documentElement, document.body]).animate({
+            scrollTop: jQuery(".gateRepairServiceWrapper").offset().top - 80
+        }, 1000);
+    });
+
     // Service Slider
     new Swiper('.garageServiceSliderOuter .swiper', {
         slidesPerView: 4,
